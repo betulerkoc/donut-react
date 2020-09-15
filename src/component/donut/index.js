@@ -1,6 +1,6 @@
 import React from "react";
 
-const Donut = ({ flavor = "plain", topping = "none" }) => {
+const Donut = ({ flavor = "plain", topping = "none", name = "none" }) => {
   // By default, a donut is FALSE for whether it's
   // eaten or not. That's why we pass in `false`.
   const [isEaten, setIsEaten] = React.useState(false);
@@ -22,6 +22,7 @@ const Donut = ({ flavor = "plain", topping = "none" }) => {
   };
   return (
     <div>
+      <div>{name}</div>
       <div>{flavor}</div>
       <div>{topping}</div>
       {}
