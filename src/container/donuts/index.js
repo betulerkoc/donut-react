@@ -7,11 +7,11 @@ export default function Donuts() {
       name: "plain ol donut",
       flavor: "plain",
       topping: ["sprinkles", "caramel"],
+      recommended: false,
     },
   ]);
 
   const renderDonuts = () => {
-    console.log(donutsMenu);
     return donutsMenu.map((donut) => <Donut {...donut} key={donut.name} />);
   };
 
